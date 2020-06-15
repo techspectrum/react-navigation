@@ -4,6 +4,7 @@ export { default as NavigationContainer } from './NavigationContainer';
 
 export { default as useBackButton } from './useBackButton';
 export { default as useScrollToTop } from './useScrollToTop';
+export { default as useDocumentTitle } from './useDocumentTitle';
 
 export { default as DefaultTheme } from './theming/DefaultTheme';
 export { default as DarkTheme } from './theming/DarkTheme';

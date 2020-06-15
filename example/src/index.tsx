@@ -28,6 +28,7 @@ import {
   DarkTheme,
   PathConfigMap,
   NavigationContainerRef,
+  useDocumentTitle,
 } from '@react-navigation/native';
 import {
   createDrawerNavigator,
@@ -199,6 +200,8 @@ export default function App() {
   const navigationRef = React.useRef<NavigationContainerRef>(null);
 
   useReduxDevToolsExtension(navigationRef);
+
+  useDocumentTitle(navigationRef);
 
   if (!isReady) {
     return null;
